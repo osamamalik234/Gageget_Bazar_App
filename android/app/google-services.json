@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "980062167600",
+    "project_id": "e-commerce-app-9b253",
+    "storage_bucket": "e-commerce-app-9b253.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:980062167600:android:f8df553e0e97b4406383f5",
+        "android_client_info": {
+          "package_name": "com.example.food"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "980062167600-n7ht4s5h6rqma1lvshiis6mde0qbt1bv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4b_R455koRSic-woVqJI0V_XuXcar5VU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "980062167600-n7ht4s5h6rqma1lvshiis6mde0qbt1bv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
