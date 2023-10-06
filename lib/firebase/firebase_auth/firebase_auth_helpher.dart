@@ -12,6 +12,7 @@ import 'package:food/models/userModel/user_model.dart';
 import 'package:food/utils/colors/my_color.dart';
 import 'package:food/utils/routes/route_name.dart';
 import 'package:food/utils/validation_utils/my_utilities.dart';
+import 'package:food/view/main%20screens/profile_screen.dart';
 import 'package:food/view/main%20screens/user_home_screen.dart';
 import 'package:food/view/user_screens/get_started.dart';
 import 'package:provider/provider.dart';
@@ -132,24 +133,32 @@ class FirebaseAuthHelper {
 
   // change password
   void changePasswordMethod(
-      String oldPassword, String newPassword, BuildContext context) {
+      String oldPassword, String newPassword, BuildContext context) async {
     User? user = FirebaseAuth.instance.currentUser;
     if (user != null) {
       try {
+        showDialogBox(context);
         // create user old credential using email and old password
         AuthCredential credential = EmailAuthProvider.credential(
           email: user.email!,
           password: oldPassword,
         );
         // Reauthenticate user with credential
-        user.reauthenticateWithCredential(credential);
+        await user.reauthenticateWithCredential(credential);
         // update password
-        user.updatePassword(newPassword);
-        MyUtilities.toastMessage(
-            "Password has been changed", MyColor.primaryColor);
+        await user.updatePassword(newPassword).then((value) {
+          Navigator.of(context).pop();
+          Navigator.of(context, rootNavigator: true).pop();
+          MyUtilities.toastMessage(
+              "Password has been changed", MyColor.primaryColor);
+          Navigator.push(context,
+              MaterialPageRoute(builder: (context) => ProfileScreen()));
+        });
       } on FirebaseAuthException catch (e) {
         if (e.code == "wrong-password") {
+          Navigator.of(context, rootNavigator: true).pop();
           MyUtilities.toastMessage("Invalid old Password", MyColor.errorColor);
+
         } else {
           MyUtilities.toastMessage(
               "Failed to changed password: $e", MyColor.errorColor);
