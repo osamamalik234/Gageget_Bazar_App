@@ -69,46 +69,42 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                     ),
                                   )
                                 : Container(
-                                    decoration: BoxDecoration(
-                                      border: Border.all(
-                                        color: MyColor.primaryColor,
-                                        width: 2,
-                                      ),
-                                      shape: BoxShape.circle,
-                                    ),
-                                    child: Container(
-                                      height: 140,
-                                      width: 140,
-                                      child: ClipOval(
-                                        child: FullScreenWidget(
-                                          disposeLevel: DisposeLevel.High,
-                                          child: Image.network(
-                                            myProvider.userModel!.image
-                                                .toString(),
-                                            fit: BoxFit.cover,
-                                            frameBuilder: (context,
-                                                child,
-                                                frame,
-                                                wasSynchronouslyLoaded) {
-                                              return child;
-                                            },
-                                            loadingBuilder: (context, child,
-                                                loadingProgress) {
-                                              if (loadingProgress == null) {
-                                                return child;
-                                              } else {
-                                                return Center(
-                                                    child:
-                                                        CircularProgressIndicator(
-                                                  color: MyColor.primaryColor,
-                                                ));
-                                              }
-                                            },
-                                          ),
+                                  height: 140,
+                                  width: 140,
+                                  child: ClipOval(
+                                    child: FullScreenWidget(
+                                      disposeLevel: DisposeLevel.High,
+                                      child: CachedNetworkImage(
+                                        imageUrl: myProvider.userModel!.image.toString(),
+                                        placeholder: (context, url) => CircularProgressIndicator(
+                                          color: MyColor.primaryColor,
                                         ),
+                                          fit: BoxFit.cover
+                                        // myProvider.userModel!.image
+                                        //     .toString(),
+                                        // fit: BoxFit.cover,
+                                        // frameBuilder: (context,
+                                        //     child,
+                                        //     frame,
+                                        //     wasSynchronouslyLoaded) {
+                                        //   return child;
+                                        // },
+                                        // loadingBuilder: (context, child,
+                                        //     loadingProgress) {
+                                        //   if (loadingProgress == null) {
+                                        //     return child;
+                                        //   } else {
+                                        //     return Center(
+                                        //         child:
+                                        //             CircularProgressIndicator(
+                                        //       color: MyColor.primaryColor,
+                                        //     ));
+                                        //   }
+                                        // },
                                       ),
                                     ),
                                   ),
+                                ),
                             SizedBox(
                               height: 10,
                             ),
