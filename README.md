@@ -88,7 +88,7 @@ Payment Flexibility: With Stripe, the Gadget Bazaar app can accept a variety of 
 
 ## Issue Encountered and Resolving During Development
 
- I faced an issue during development which is "multidex" issue when your project becomes too large and exceeds the 65,536 method limit imposed by Android's Dalvik Executable (DEX) file format.
+ I faced an issue during development which is "multidex" issue when your project becomes too large and exceeds the method limit imposed by Android's Dalvik Executable (DEX) file format.
 
  ![download](https://github.com/osamamalik234/Gageget_Bazar_App/assets/93467529/0899348b-fe64-4fa3-b6f5-1bb2288861cf)
 
