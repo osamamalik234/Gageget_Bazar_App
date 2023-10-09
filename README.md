@@ -1,12 +1,14 @@
 # Gadget Bazaar App
 
-A new Flutter project.
+# Project Report
 
-## Getting Started
+## Problem Identification
 
-## Project Report
-"Welcome to Gadget Bazar, your go-to destination for all things tech! Our app offers a vast selection of gadgets, from state-of-the-art computers to innovative mobile devices and all the accessories you need in between, including USB drives and mice.
+The problem faced by people is the manual process of purchasing gadgets. Traditional gadget purchasing methods involve physical stores, which can be time-consuming and often result in limited options. Customers may encounter the following issues:
 
-With flexible payment options, you can pay with cash for an in-store feel or use the secure Stripe payment method for online convenience. Your transactions are always protected.
+Limited Availability: In physical stores, customers are constrained by the inventory available, which may not offer the latest or most diverse gadgets.
+Inconvenience: Shopping for gadgets in physical stores can be time-consuming, requiring travel and potentially dealing with crowds.
+Geographical Limitations: People living in remote areas may have limited access to gadget stores, making it challenging to purchase the latest technology.
+Lack of Information: Physical stores might not provide sufficient information and reviews about the gadgets, making it difficult for customers to make informed decisions.
+Payment Hassles: Traditional purchasing often involves carrying cash or credit cards, which can be inconvenient and potentially risky.
 
-Stay ahead of the curve with real-time notifications that update you on the latest tech trends and exclusive offers. Our app is designed to be responsive and user-friendly, ensuring a seamless and intuitive shopping experience.
