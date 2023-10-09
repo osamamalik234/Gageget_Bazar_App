@@ -4,6 +4,7 @@ A new Flutter project.
 
 ## Getting Started
 
+## Project Report
 "Welcome to Gadget Bazar, your go-to destination for all things tech! Our app offers a vast selection of gadgets, from state-of-the-art computers to innovative mobile devices and all the accessories you need in between, including USB drives and mice.
 
 With flexible payment options, you can pay with cash for an in-store feel or use the secure Stripe payment method for online convenience. Your transactions are always protected.
