@@ -42,7 +42,7 @@ Responsive Design: Gadget Bazaar boasts a responsive design that adapts effortle
 
 Intuitive User Interface: We've prioritized user-friendliness, offering an intuitive and easy-to-navigate interface. With clear menus, well-organized categories, and a logical flow, you can quickly find the gadgets you're looking for.
 
-https://www.canva.com/design/DAFrVwDs5p0/zKjIHi7tpeXjzv4tBr_rwQ/edit?utm_content=DAFrVwDs5p0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+![Alt Text](https://www.canva.com/design/DAFrVwDs5p0/zKjIHi7tpeXjzv4tBr_rwQ/edit?utm_content=DAFrVwDs5p0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 
 
